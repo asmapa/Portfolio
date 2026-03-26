@@ -40,9 +40,9 @@ const AboutMe = () => {
             </h1>
 
             <p className="text-base sm:text-lg md:text-lg text-gray-700  leading-relaxed">
-              👋 Hey there! I’m <span className="font-semibold text-red-600">Asma P A</span>, an introverted yet witty coder who thrives on 
-              problem-solving and creativity. With a strong foundation in Computer Science and a diploma CGPA of <span className="font-semibold">9.77</span>, 
-              I have honed my skills in full-stack development, designing seamless user experiences, and building efficient backend systems.
+             👋 Hey there! I’m <span className="font-semibold text-red-600">Asma P A</span>, an introverted yet witty coder who thrives on 
+problem-solving and creativity. With a strong academic background, including a Diploma with a CGPA of 
+<span className="font-semibold"> 9.77</span> and a B.Tech in Computer Science, I have honed my skills in full-stack development and building efficient systems.
             </p>
 
             <p className="mt-4 text-base sm:text-lg md:text-lg text-gray-700 leading-relaxed">

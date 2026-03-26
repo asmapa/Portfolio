@@ -56,10 +56,6 @@ const Contact = () => {
         <div className='flex flex-col md:flex-row items-center gap-8 text-lg'>
 
           <div className='flex items-center gap-2'>
-            📞 <span className='font-semibold'>+91 9645493868</span>
-          </div>
-
-          <div className='flex items-center gap-2'>
             📧 <span className='font-semibold'>asmapa122002@gmail.com</span>
           </div>
 
