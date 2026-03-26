@@ -9,17 +9,21 @@ import Project from './components/Project'
 import Contact from './components/Contact'
 import Hobbies from './components/Hobbies'
 
+import MainProject from './components/MainProject'
+
 function App() {
  
 
   return (
     <>
+   
       <main>
         <Hero />
         <Skills />
         <AboutMe />
         <Project />
         <Hobbies/>
+        <MainProject />
         <Contact/>
      </main>
     </>

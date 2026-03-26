@@ -4,35 +4,66 @@ import me from "../assets/asma-removebg-preview.png";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex flex-col items-center">
-      
-      {/* Background - Lower z-index */}
+    <div className="relative overflow-hidden min-h-[650px] flex flex-col items-center">
+
+      {/* Background */}
       <div className="absolute top-0 left-0 w-full h-[80vh] bg-gradient-to-r from-red-500 to-red-950 rounded-b-[40%] z-0"></div>
 
-      {/* Navbar - Higher z-index */}
+      {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section - Higher z-index */}
-      <section id="home" className="flex flex-col md:flex-row items-center justify-center w-full px-4 md:px-52 pb-4 md:pb-24 pt-24 md:pt-32 mt-24 md:mt-0 z-10">
-        {/* Left Content */}
-        <div data-aos="fade-up" className="flex-1 md:text-left mt-10 md:mt-0">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Hey, I'M Asma P A
-          </h1>
-          <p data-aos="fade-up" data-aos-delay="300" className="text-base sm:text-lg md:text-lg text-gray-300 mb-6">
-            A passionate coder who loves turning ideas into reality through clean and efficient code. An introvert at heart but a problem-solver by nature,let my work speak louder than words. With a touch of humor and a love for innovation!
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-6 md:px-16 pt-32 pb-16 z-10"
+      >
+
+        {/* LEFT CONTENT */}
+        <div className="flex-1 text-center md:text-left">
+
+          {/* Small Intro */}
+          <p className="text-gray-300 mb-2 text-lg">
+             Hello, I'm
           </p>
-          <button type="button" className="text-gray-900 mt-4 bg-white hover:bg-blue-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center">
-            Contact
-          </button>
+
+          {/* Name */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+            Asma <span className="text-yellow-400">P A</span>
+          </h1>
+
+          {/* Tagline */}
+          <p className="text-lg text-gray-300 mb-6">
+            Full Stack Developer | Problem Solver | Tech Enthusiast
+          </p>
+
+          {/* Description */}
+          <p className="text-base sm:text-lg text-gray-300 mb-6 max-w-xl mx-auto md:mx-0">
+            A passionate coder who loves turning ideas into reality through clean and efficient code.
+            An introvert at heart but a problem-solver by nature — let my work speak louder than words.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
+            <a href="mailto:asmapa122002@gmail.com">
+  <button className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-300 transition">
+    Contact Me
+  </button>
+</a>
+
+            <a href="/asma-cv.pdf" download>
+  <button className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">
+    Download CV
+  </button>
+</a>
+          </div>
         </div>
 
-        {/* Right Image Section */}
-        <div data-aos="fade-up" className="flex-1 flex justify-center md:justify-end -mt-24">
-          <img 
-            src={me} 
-            alt="Hero Image" 
-            className="sm:h-[550px] md:h-[580px] sm:w-[450px] md:w-[480px]  md:mb-0 object-cover rounded-lg" 
+        {/* RIGHT IMAGE */}
+        <div className="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
+          <img
+            src={me}
+            alt="Hero"
+           className="w-[320px] sm:w-[420px] md:w-[500px] lg:w-[800px] xl:w-[1000px] object-contain"
           />
         </div>
 

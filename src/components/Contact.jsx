@@ -2,45 +2,90 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
-       <section id='contact' className='text-gray-600 body-font'>
-        <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col'>
-            <div data-aos='fade-up' data-aos-delay='300' className='text-center lg:w-2/3 w-full'>
-             <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>Contact</h1>
-             <p className='mb-8 leading-relaxed font-bold'>
-               😂 "I hope you enjoyed my foolish creations! If you survived them and still want to talk, feel free to reach out. I promise I'm slightly more serious when replying... maybe. 😆 Let's connect and build something even crazier!" 🚀
-             </p>  
-                <div data-aos='fade-up' data-aos-delay='500' className='flex flex-col items-center text-xl font-bold'>
-                  
-                  <div className='flex items-center space-x-2'>
-                    <svg class="h-8 w-8 text-green-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                        <path d="M15 6h6m-3 -3v6" />
-                    </svg>
-                        <span >+99 999999999</span>
-                  </div>
-                  <div className='flex items-center space-x-2'>
-                  <svg class="h-8 w-8 text-red-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <polyline points="3 7 12 13 21 7" />
-                  </svg>
-                        <span >asmapa122002@gmail.com</span>
-                  </div>
-                  <div className='flex items-center space-x-2'>
-                  <svg class="h-8 w-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect x="2" y="9" width="4" height="12" />
-                        <circle cx="4" cy="4" r="2" />
-                  </svg>
-                        <span >mylinkedin</span>
-                  </div>
-                </div>
-            </div>
+    <section id='contact' className='text-black  body-font'>
+
+      <div className='max-w-4xl mx-auto px-6 py-20 text-center'>
+
+        {/* Heading */}
+        <h1 className='text-3xl sm:text-4xl font-bold mb-4 text-red-500'>
+          Let’s Connect 
+        </h1>
+
+        {/* Fun Subtext */}
+        <p className='mb-6 text-lg'>
+           You made it this far… respect!  
+        </p>
+
+        <p className='mb-6 text-base sm:text-lg'>
+          💼 <span className='text-red-400 font-semibold'>Recruiter?</span>  
+          I promise I’m more professional in meetings than in this portfolio  
+        </p>
+
+        <p className='mb-10 text-base sm:text-lg'>
+          Got an idea, suggestion, or just want to talk about tech, career, or life?  
+          Drop a message below  (I actually reply, not like some apps )
+        </p>
+
+        {/* Message Box */}
+        <div className='flex flex-col gap-4 mb-10'>
+
+          <input
+            type="text"
+            placeholder="Your Name 👤"
+            className="p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-red-500"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email 📧"
+            className="p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-red-500"
+          />
+
+          <textarea
+            rows="4"
+            placeholder="Your Message 💬 (be nice 😄)"
+            className="p-3 rounded-lg bg-gray-800 text-white outline-none focus:ring-2 focus:ring-red-500"
+          ></textarea>
+
+          <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition duration-300">
+            Send Message 🚀
+          </button>
         </div>
+
+        {/* Contact Info */}
+        <div className='flex flex-col md:flex-row items-center gap-8 text-lg'>
+
+          <div className='flex items-center gap-2'>
+            📞 <span className='font-semibold'>+91 9645493868</span>
+          </div>
+
+          <div className='flex items-center gap-2'>
+            📧 <span className='font-semibold'>asmapa122002@gmail.com</span>
+          </div>
+
+        <a
+    href="https://www.linkedin.com/in/asma-p-a-24099b249/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-blue-400 transition"
+  >
+    💼 <span className='font-semibold'>LinkedIn</span>
+  </a>
+
+  {/* GitHub */}
+  <a
+    href="https://github.com/asmapa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-gray-400 transition"
+  >
+    💻 <span className='font-semibold'>GitHub</span>
+  </a>
+
+        </div>
+
+      </div>
     </section>
-    </div>
   )
 }
 
