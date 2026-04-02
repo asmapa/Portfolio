@@ -38,7 +38,19 @@ const MainProject = () => {
         "An AI-powered mobile application for visually impaired users Almost 9 features -> Face Recognition, Obstacle Detection, Object identification,Navigation,Reading Text,Currency Detection,Emergency Help,Phone Status,Describe Scene Infront OF U.",
       tech: "Android, Kotlin, ML Kit, TFLite, Firebase",
       link: ""
-    }
+    },
+    {
+  title: "Embedded Engineer Portfolio Website",
+  description:
+    "Designed and developed a modern, responsive portfolio website for an embedded firmware engineer. The project showcases expertise in automotive systems, real-time embedded solutions, and firmware development with smooth animations and clean UI/UX.",
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "Framer Motion"
+  ],
+  link: "https://ameen-eta.vercel.app/"
+}
   ]
 
   return (
@@ -55,7 +67,7 @@ const MainProject = () => {
 </p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <MainProjectCard key={index} {...project} />
           ))}
